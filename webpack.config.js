@@ -16,6 +16,9 @@ const config = {
       },
     ],
   },
+  resolve: {
+    extensions: [".js", ".jsx"],
+  },
 };
 
 module.exports = config;
