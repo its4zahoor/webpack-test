@@ -1,5 +1,9 @@
-const hello = () => {
-  console.log("Hello World");
-};
+import React from "react";
+import ReactDOM from "react-dom";
 
-hello();
+function App(props) {
+  return <div>Hello {props.name}</div>;
+}
+
+const appDiv = document.getElementById("app");
+ReactDOM.render(<App name="Zahoor" />, appDiv);
